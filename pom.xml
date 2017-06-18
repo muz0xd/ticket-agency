@@ -24,7 +24,16 @@
   	</dependency>
   </dependencies>
   <build>
-     <plugins>
+ 	<finalName>${project.artifactId}</finalName>
+    <plugins>
+     	<plugin>
+			<groupId>org.wildfly.plugins</groupId>
+			<artifactId>wildfly-maven-plugin</artifactId>
+			<version>1.0.2.Final</version>
+			<configuration>
+			<filename>${project.build.finalName}.jar</filename>
+			</configuration>
+		</plugin>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
