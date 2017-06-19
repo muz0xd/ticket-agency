@@ -1,6 +1,6 @@
 package com.wfly.ticket.boundary;
 
-import com.wfly.ticket.control.*;
+import com.wfly.ticket.control.*; 
 
 public interface TheatreBookerRemote {
 

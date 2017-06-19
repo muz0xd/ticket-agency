@@ -8,4 +8,16 @@
   <artifactId>ticket-agency-ejb</artifactId>
   <packaging>ejb</packaging>
   <name>ticket-agency-ejb</name>
+  <repositories>
+    <repository>
+      <id>central</id>
+      <url>file://c:\Users\MuzinSA\.m2\repository\</url>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>central</id>
+      <url>file://c:\Users\MuzinSA\.m2\repository\</url>
+    </pluginRepository>
+  </pluginRepositories>
 </project>
