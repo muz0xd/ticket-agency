@@ -13,7 +13,7 @@
 			<dependency>
 				<groupId>org.wildfly</groupId>
 				<artifactId>wildfly-ejb-client-bom</artifactId>
-				<version>8.1.0.Final</version>
+				<version>10.1.0.Final</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -71,27 +71,28 @@
 	<build>
 		<finalName>${project.artifactId}</finalName>
 		<plugins>
-	   		<plugin>
+			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
 				<version>1.2.1</version>
 				<executions>
-		    		<execution>
-		                <goals>
-		                    <goal>exec</goal>
-		                </goals>
-		            </execution>
-		        </executions>
-		        <configuration>
-		            <executable>java</executable>
-		            <workingDirectory>${project.build.directory}/exec-working-directory</workingDirectory>
-		            <arguments>
-		                <argument>-classpath</argument>
-		                <classpath/>
-		                <argument>com.wfly.ticket.client.TicketAgencyClient</argument>
-		            </arguments>
-		        </configuration>
-	        </plugin>
-	    </plugins>
-    </build>
+					<execution>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<executable>java</executable>
+					<workingDirectory>${project.build.directory}/exec-working-directory</workingDirectory>
+					<arguments>
+						<argument>-classpath</argument>
+						<classpath>
+						</classpath>
+						<argument>com.wfly.ticket.client.TicketAgencyClient</argument>
+					</arguments>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
