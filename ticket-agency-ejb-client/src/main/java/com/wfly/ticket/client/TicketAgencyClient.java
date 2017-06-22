@@ -89,7 +89,7 @@ public class TicketAgencyClient {
 
 	private void handleMoney() {
 		final int accountBalance = theatreBooker.getAccountBalance();
-		logger.info("You	have:	" + accountBalance + "	money	left.");
+		logger.info("You have: " + accountBalance + "money left.");
 	}
 
 	private void handleQuit() {
@@ -110,6 +110,6 @@ public class TicketAgencyClient {
 	private void showWelcomeMessage() {
 		System.out.println("Theatre	booking	system");
 		System.out.println("=====================================");
-		System.out.println("Commands:	book,	list,money,	quit");
+		System.out.println("Commands: book, list, money, quit");
 	}
 }

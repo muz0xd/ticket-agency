@@ -30,7 +30,7 @@ public class TheatreBooker implements TheatreBookerRemote {
 	public String bookSeat(int seatId) throws SeatBookedException, NotEnoughMoneyException, NoSuchSeatException {
 		final int seatPrice = theatreBox.getSeatPrice(seatId);
 		if (seatPrice > money) {
-			throw new NotEnoughMoneyException("You don’t have enough money to buy this" + seatId + "seat!");
+			throw new NotEnoughMoneyException("You don't have enough money to buy this" + seatId + "seat!");
 		}
 		theatreBox.buyTicket(seatId);
 		money = money - seatPrice;

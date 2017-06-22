@@ -84,11 +84,10 @@
 				</executions>
 				<configuration>
 					<executable>java</executable>
-					<workingDirectory>${project.build.directory}/exec-working-directory</workingDirectory>
+					<workingDirectory>${project.build.directory}</workingDirectory>
 					<arguments>
 						<argument>-classpath</argument>
-						<classpath>
-						</classpath>
+						<classpath/>
 						<argument>com.wfly.ticket.client.TicketAgencyClient</argument>
 					</arguments>
 				</configuration>
