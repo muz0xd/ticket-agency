@@ -83,8 +83,8 @@
 					</execution>
 				</executions>
 				<configuration>
-					<executable>java</executable>
-					<workingDirectory>${project.build.directory}</workingDirectory>
+					<executable>${java.home}/bin/java</executable>
+					<workingDirectory>${project.build.directory}/exec-working-directory</workingDirectory>
 					<arguments>
 						<argument>-classpath</argument>
 						<classpath/>
