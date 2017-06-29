@@ -1,9 +1,0 @@
-/home/muz0xd/development/ticket-agency/ticket-agency-ejb/src/main/java/com/wfly/ticket/control/NoSuchSeatException.java
-/home/muz0xd/development/ticket-agency/ticket-agency-ejb/src/main/java/com/wfly/ticket/boundary/TheatreBookerRemote.java
-/home/muz0xd/development/ticket-agency/ticket-agency-ejb/src/main/java/com/wfly/ticket/boundary/NotEnoughMoneyException.java
-/home/muz0xd/development/ticket-agency/ticket-agency-ejb/src/main/java/com/wfly/ticket/control/Seat.java
-/home/muz0xd/development/ticket-agency/ticket-agency-ejb/src/main/java/com/wfly/ticket/control/TheatreBox.java
-/home/muz0xd/development/ticket-agency/ticket-agency-ejb/src/main/java/com/wfly/ticket/control/SeatBookedException.java
-/home/muz0xd/development/ticket-agency/ticket-agency-ejb/src/main/java/com/wfly/ticket/boundary/TheatreBooker.java
-/home/muz0xd/development/ticket-agency/ticket-agency-ejb/src/main/java/com/wfly/ticket/boundary/TheatreInfoRemote.java
-/home/muz0xd/development/ticket-agency/ticket-agency-ejb/src/main/java/com/wfly/ticket/boundary/TheatreInfo.java
