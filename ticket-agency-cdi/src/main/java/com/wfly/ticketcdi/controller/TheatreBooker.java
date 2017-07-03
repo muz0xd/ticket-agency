@@ -18,7 +18,8 @@ public class TheatreBooker implements Serializable {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = -2774564534015825754L;
+
 	
 	@Inject
 	private Logger logger;
