@@ -2,6 +2,8 @@ package com.wfly.ticketcdi.controller;
 
 import com.wfly.ticketcdi.boundary.NoSuchSeatException;
 import com.wfly.ticketcdi.boundary.TheatreBox;
+import com.wfly.ticketcdi.util.Logged;
+
 import org.jboss.logging.Logger;
 
 import javax.annotation.PostConstruct;
@@ -14,6 +16,7 @@ import java.io.Serializable;
 
 @Named
 @SessionScoped
+@Logged
 public class TheatreBooker implements Serializable {
 	/**
 	 * 
@@ -38,15 +41,15 @@ public class TheatreBooker implements Serializable {
 		logger.info("Booking	seat	" + seatId);
 		int seatPrice = theatreBox.getSeatPrice(seatId);
 		if (seatPrice > money) {
-			FacesMessage m = new FacesMessage(FacesMessage.SEVERITY_ERROR, "Not	enough	Money!",
-					"Registration	unsuccessful");
+			FacesMessage m = new FacesMessage(FacesMessage.SEVERITY_ERROR, "Not enough Money!",
+					"Registration unsuccessful");
 			facesContext.addMessage(null, m);
 			return;
 		}
 		theatreBox.buyTicket(seatId);
-		FacesMessage m = new FacesMessage(FacesMessage.SEVERITY_INFO, "Booked!", "Booking	successful");
+		FacesMessage m = new FacesMessage(FacesMessage.SEVERITY_INFO, "Booked!", "Booking successful");
 		facesContext.addMessage(null, m);
-		logger.info("Seat	booked.");
+		logger.info("Seat booked.");
 		money = money - seatPrice;
 	}
 

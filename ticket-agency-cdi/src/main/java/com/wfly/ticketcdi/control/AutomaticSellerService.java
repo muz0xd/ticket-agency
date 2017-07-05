@@ -33,7 +33,7 @@ public class AutomaticSellerService {
 		}
 		final Seat seat = seatOptional.get();
 		theatreBox.buyTicket(seat.getId());
-		logger.info("Somebody	just	booked	seat	number	" + seat.getId());
+		logger.info("Somebody just booked seat number" + seat.getId());
 	}
 
 	private Optional<Seat> findFreeSeat() {
