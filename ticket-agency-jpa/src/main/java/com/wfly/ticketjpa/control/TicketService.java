@@ -2,7 +2,6 @@ package com.wfly.ticketjpa.control;
 
 import com.wfly.ticketjpa.entity.Seat;
 import com.wfly.ticketjpa.entity.SeatType;
-
 import javax.ejb.Stateless;
 import javax.enterprise.event.Event;
 import javax.inject.Inject;
